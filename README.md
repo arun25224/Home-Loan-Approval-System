@@ -51,10 +51,12 @@
 ### **4. Evaluation & Business Interpretation**
 
 - **Accuracy:** Both models hit **83.15%** on the test set.
+
+<img width="489" height="64" alt="image" src="https://github.com/user-attachments/assets/b9c9c5a2-5803-434f-b8ba-888f33400885" />
+
 - **Coefficient Analysis (LogReg):** `Credit_Score` had the highest positive coefficient (3.07), confirming it as the strongest approval driver. `Married` and `Gender` showed mild positive influence. `Education` and `Property_Area` had negative weights, hinting at nuanced risk factors.
 - **Overfitting Check:** Training vs. Testing accuracies were nearly identical. The shallow tree depth and linear model structure naturally regularized the learning process. No overfitting observed.
 
-<img width="489" height="64" alt="image" src="https://github.com/user-attachments/assets/b9c9c5a2-5803-434f-b8ba-888f33400885" />
 <img width="277" height="377" alt="image" src="https://github.com/user-attachments/assets/1dc028d4-ce2a-4b92-8c3a-6f15dc536c08" />
 
 ### **5. Strategic Recommendations & Next Steps**
