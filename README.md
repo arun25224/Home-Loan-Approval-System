@@ -1,4 +1,4 @@
-# Automated Home Loan Approval System: Predictive Modeling & Business Strategy
+# Automated Home Loan Approval System
 
 # **Project Overview**
 
@@ -32,9 +32,9 @@
 - **Encoding:** Applied `LabelEncoder` to all categorical features (`Gender`, `Married`, `Dependents`, `Education`, `Self_Employed`, `Property_Area`, `Loan_Status`). Chose label encoding over one-hot due to low cardinality and tree/linear model compatibility.
 - **Train/Test Split:** 70/30 stratified split (`random_state=42`) to ensure consistent evaluation and prevent data leakage.
 
-!image.png
+<img width="237" height="260" alt="image" src="https://github.com/user-attachments/assets/30a8f714-c096-4303-be4d-20bca9a4082a" />
+<img width="262" height="244" alt="image" src="https://github.com/user-attachments/assets/12197b11-1018-4cba-a4e3-5b5777a8d41e" />
 
-!image.png
 
 ### **3. Model Selection & Training**
 
@@ -46,7 +46,7 @@
     - Set `max_iter=1000` to ensure convergence.
 - **Why These Two?** They represent two ends of the ML spectrum: non-linear rule-based logic (CART) vs. linear probabilistic modeling (LogReg). Both are highly valued in regulated industries like banking.
 
-!image.png
+<img width="1570" height="812" alt="image" src="https://github.com/user-attachments/assets/641a52cd-d9c2-4c87-9066-498c9cd1c75f" />
 
 ### **4. Evaluation & Business Interpretation**
 
@@ -54,9 +54,8 @@
 - **Coefficient Analysis (LogReg):** `Credit_Score` had the highest positive coefficient (3.07), confirming it as the strongest approval driver. `Married` and `Gender` showed mild positive influence. `Education` and `Property_Area` had negative weights, hinting at nuanced risk factors.
 - **Overfitting Check:** Training vs. Testing accuracies were nearly identical. The shallow tree depth and linear model structure naturally regularized the learning process. No overfitting observed.
 
-!image.png
-
-!image.png
+<img width="489" height="64" alt="image" src="https://github.com/user-attachments/assets/b9c9c5a2-5803-434f-b8ba-888f33400885" />
+<img width="277" height="377" alt="image" src="https://github.com/user-attachments/assets/1dc028d4-ce2a-4b92-8c3a-6f15dc536c08" />
 
 ### **5. Strategic Recommendations & Next Steps**
 
